@@ -1,3 +1,7 @@
 .btn {
-    
+    font-size: 24pt;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+
 }
