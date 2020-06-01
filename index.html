@@ -5,24 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stilo.css">
     <title>Calculadora</title>
+    <script type="text/javascript">
+        function limpar(){
+            document.getElementById('visor').value=' ';
+        }
+
+        function preencher(valor){
+            document.getElementById('visor').value += valor;
+        }
+
+        function calcular(){
+            var resultado=0;
+            resultado = document.getElementById('visor').value;
+            document.getElementById('visor').value='';
+            document.getElementById('visor').value= eval(resultado);
+        }
+
+    </script>
+
 </head>
 <body>
-    <button class="btn">7</button>
-    <button class="btn">8</button>
-    <button class="btn">9</button>
-    <button class="btn">x</button><br>
-    <button class="btn">4</button>
-    <button class="btn">5</button>
-    <button class="btn">6</button>
-    <button class="btn">-</button><br>
-    <button class="btn">1</button>
-    <button class="btn">2</button>
-    <button class="btn">3</button>
-    <button class="btn">+</button><br>
-    <button class="btn">.</button>
-    <button class="btn">0</button>
-    <button class="btn">/</button>
-    <button class="btn">=</button><br>
+    <input type="texto" id="visor" class="visor"> <br><br>
+    <input type="submit" class="btn" value="7" onclick="preencher(7)";>
+    <input type="submit" class="btn" value="8" onclick="preencher(8)";>
+    <input type="submit" class="btn" value="9" onclick="preencher(9)";>
+    <input type="submit" class="btn" value="/" onclick="preencher('/')";>
+    <br><br>
+    <input type="submit" class="btn" value="4" onclick="preencher(4)";>
+    <input type="submit" class="btn" value="5" onclick="preencher(5)";>
+    <input type="submit" class="btn" value="6" onclick="preencher(6)";>
+    <input type="submit" class="btn" value="*" onclick="preencher('*')";>
+    <br><br>
+    <input type="submit" class="btn" value="1" onclick="preencher(1)";>
+    <input type="submit" class="btn" value="2" onclick="preencher(2)";>
+    <input type="submit" class="btn" value="3" onclick="preencher(3)";>
+    <input type="submit" class="btn" value="-" onclick="preencher('-')";>
+    <br><br>
+    <input type="submit" class="btn" value="C" onclick="limpar()";>
+    <input type="submit" class="btn" value="0" onclick="preencher(0)";>
+    <input type="submit" class="btn" value="+" onclick="preencher('+')";>
+    <input type="submit" class="btn" value="=" onclick="calcular()";>
+
+
 
 </body>
 </html>
