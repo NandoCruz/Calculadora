@@ -1,8 +1,12 @@
-body {
+.body {
+    display: block;
     width: 500px;
-    position: relative;
-    box-shadow: 0px 2px 0px 0px rgba(0,0,0,.5);
-    background-color: #e5e5e5;
+    position: absolute;
+    margin: 20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    background-color: #A02B2D;
+    /* padding: 20;*/
+
 }
 
 .btn {
